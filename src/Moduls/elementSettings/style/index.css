@@ -1,0 +1,32 @@
+.settings-block {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  width: 125px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.settings-block .settings-title {
+  font: 16px 'OnePlusOneRegular', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0 3px;
+}
+.settings-block .settings-items .settings-img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+.settings-block .settings-items .settings-range {
+  display: inline-block;
+  width: 85px;
+  cursor: pointer;
+}
+.settings-block .settings-hr {
+  opacity: 0.5;
+  margin: 0;
+}

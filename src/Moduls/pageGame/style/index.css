@@ -1,0 +1,188 @@
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 15px;
+}
+.game-info .game-info-players-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 48%;
+}
+.game-info .game-info-players-block .game-info-players-name {
+  font: 1.2em 'OnePlusOneRegular', Arial, sans-serif;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.game-info .game-info-players-block .game-info-players-symbol {
+  font: 1.4em 'OnePlusOneRegular', Arial, sans-serif;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.game-info .game-info-players-block .game-info-players-symbol .game-info-players-walks {
+  display: inline-block;
+  margin: 0 15px;
+  vertical-align: middle;
+  font-size: 0.7em;
+  text-align: center;
+  opacity: 0;
+}
+.game-info .game-info-players-block .game-info-players-symbol-active {
+  font-size: 1.8em;
+  text-shadow: 0 0 4px #000000;
+}
+.game-info .game-info-players-block .game-info-players-symbol-active .game-info-players-walks {
+  opacity: 1;
+  font-size: 0.7em;
+  text-shadow: 0 0 3px #000000;
+}
+.game-info .game-info-score {
+  font: 1.8em 'OnePlusOneRegular', Arial, sans-serif;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+.game-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8.7%;
+  background-color: #000;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.game-space .game-space-row {
+  border-bottom: 2px solid #000000;
+}
+.game-space .game-space-row:first-child .game-space-cell:first-child {
+  border-top-left-radius: 25%;
+}
+.game-space .game-space-row:first-child .game-space-cell:last-child {
+  border-top-right-radius: 25%;
+}
+.game-space .game-space-row:last-child {
+  border: none;
+}
+.game-space .game-space-row:last-child .game-space-cell:first-child {
+  border-bottom-left-radius: 25%;
+}
+.game-space .game-space-row:last-child .game-space-cell:last-child {
+  border-bottom-right-radius: 25%;
+}
+.game-space .game-space-row .game-space-cell {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c6d7ff;
+  border-right: 2px solid #000000;
+  box-shadow: inset 0 0 30px 5px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  font: 16px 'OnePlusOneHeavy', Arial, sans-serif;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.game-space .game-space-row .game-space-cell:last-child {
+  border: none;
+}
+.game-space .game-space-row .game-space-cell-active {
+  background-color: #eff4ff;
+}
+.game-space .game-space-row .game-space-cell-hover:hover {
+  cursor: pointer;
+  background-color: #eff4ff;
+}
+.game-space .game-space-row .game-space-cell-win {
+  background-color: #a1ff9f;
+}
+.game-space .game-space-row .game-space-cell-draw {
+  background-color: #ffd4aa;
+}
+.game-panel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin-top: 15px;
+}
+.game-panel .game-panel-hint {
+  font: 0.9em 'OnePlusOneRegular', Arial, sans-serif;
+}
+.game-panel .game-panel-btn {
+  padding: 1px 25px;
+  font: 1.4em 'OnePlusOneRegular', Arial, sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.game-panel .game-panel-btn:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.game-modal-window-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+}
+.game-modal-window-overlay .game-modal-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  font-weight: bold;
+  padding: 20px 60px;
+}
+.game-modal-window-overlay .game-modal-window .modal-window-victory-title {
+  font: 36px 'SuperMario', Arial, sans-serif;
+}
+.game-modal-window-overlay .game-modal-window .modal-window-victory-player {
+  font: 70px 'SuperMario', Arial, sans-serif;
+  margin: 10px;
+}
+.game-modal-window-overlay .game-modal-window .modal-window-btn {
+  width: 200px;
+  height: 35px;
+  margin-top: 10px;
+  font: 24px 'OnePlusOneRegular', Arial, sans-serif;
+}
+.container-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 3%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+  margin-top: 30px;
+  min-height: 480px;
+  min-width: 480px;
+  -webkit-transition: all 0.1s ease, background-color 0.3s ease;
+  -moz-transition: all 0.1s ease, background-color 0.3s ease;
+  -ms-transition: all 0.1s ease, background-color 0.3s ease;
+  -o-transition: all 0.1s ease, background-color 0.3s ease;
+  transition: all 0.1s ease, background-color 0.3s ease;
+}

@@ -1,0 +1,42 @@
+.game-modal-window-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+
+  .game-modal-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-weight: bold;
+    padding: 20px 60px;
+
+    .modal-window-victory-title {
+      font: 36px 'SuperMario', Arial, sans-serif;
+    }
+
+    .modal-window-victory-player {
+      font: 70px 'SuperMario', Arial, sans-serif;
+      margin: 10px;
+    }
+
+    .modal-window-btn {
+      width: 200px;
+      height: 35px;
+      margin-top: 10px;
+      font: 24px 'OnePlusOneRegular', Arial, sans-serif;
+    }
+  }
+}

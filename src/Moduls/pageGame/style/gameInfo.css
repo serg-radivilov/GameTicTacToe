@@ -1,0 +1,48 @@
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 15px;
+}
+.game-info .game-info-players-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 48%;
+}
+.game-info .game-info-players-block .game-info-players-name {
+  font: 1.2em 'OnePlusOneRegular', Arial, sans-serif;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.game-info .game-info-players-block .game-info-players-symbol {
+  font: 1.4em 'OnePlusOneRegular', Arial, sans-serif;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.game-info .game-info-players-block .game-info-players-symbol .game-info-players-walks {
+  display: inline-block;
+  margin: 0 15px;
+  vertical-align: middle;
+  font-size: 0.7em;
+  text-align: center;
+  opacity: 0;
+}
+.game-info .game-info-players-block .game-info-players-symbol-active {
+  font-size: 1.8em;
+  text-shadow: 0 0 4px #000000;
+}
+.game-info .game-info-players-block .game-info-players-symbol-active .game-info-players-walks {
+  opacity: 1;
+  font-size: 0.7em;
+  text-shadow: 0 0 3px #000000;
+}
+.game-info .game-info-score {
+  font: 1.8em 'OnePlusOneRegular', Arial, sans-serif;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
